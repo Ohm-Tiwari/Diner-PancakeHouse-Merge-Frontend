@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The merger</title>
-    <link href="diner.css" rel="stylesheet"/>
+    <title>Dinner</title>
+    <link href="dinner.css" rel="stylesheet"/>
     <link href="navbar.css" rel="stylesheet"/>
   </head>
   <body>
-
     <ul class="topnav">
       <li><a class="active" href="index.html">All Menus</a></li>
       <li><a href="pancakehouse.html">Breakfast</a></li>        
@@ -18,9 +17,8 @@
       <li class="right"><a class="active" href="login.html">Login</a></li>
     </ul>
 
-
     <div id="menu" class="container">
-        <h1>Diner-PancakHouse Menu</h1>
+        <h1>Supper Menu</h1>
     </div>
 
     <script>
@@ -30,7 +28,7 @@
       displayTheMenu();
 
       async function getTheMenu() {
-        let response = await fetch(host + "/merger");
+        let response = await fetch(host + "/supper");
         let menu = await response.json();
         return menu;
       }
