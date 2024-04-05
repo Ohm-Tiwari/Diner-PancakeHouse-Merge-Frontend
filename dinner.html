@@ -28,7 +28,7 @@
       displayTheMenu();
 
       async function getTheMenu() {
-        let response = await fetch(host + "/supper");
+        let response = await fetch(host + "/merger" + "/supper");
         let menu = await response.json();
         return menu;
       }
